@@ -1,4 +1,5 @@
 import BackgroundHeading from "./components/BackgroundHeading"
+import Footer from "./Footer"
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
 
       <main></main>
 
-      <Footer />
+      <Footer/>
     </>
   )
 }
