@@ -1,0 +1,22 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  background: none;
+}
+
+small {
+  font: inherit;
+}
