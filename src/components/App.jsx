@@ -1,12 +1,15 @@
-import BackgroundHeading from "./components/BackgroundHeading"
+import BackgroundHeading from "./BackgroundHeading"
 import Footer from "./Footer"
+import Header from "./Header"
 
 function App() {
   return (
     <>
       <BackgroundHeading />
 
-      <main></main>
+      <main>
+        <Header />
+      </main>
 
       <Footer/>
     </>
