@@ -62,6 +62,15 @@ h1 {
   z-index: -1;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: .5;
+  width: min(972px, 100%);
+  margin-top: .8rem;
+}
+
 .logo {
   width: 5rem;
 }
