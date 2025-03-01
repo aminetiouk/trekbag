@@ -1,6 +1,7 @@
 import BackgroundHeading from "./BackgroundHeading"
 import Footer from "./Footer"
 import Header from "./Header"
+import Sidebar from "./Sidebar"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
 
       <main>
         <Header />
+        <Sidebar />
       </main>
 
       <Footer/>
