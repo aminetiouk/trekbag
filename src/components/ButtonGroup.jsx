@@ -12,9 +12,7 @@ export default function ButtonGroup() {
     <section className="button-group">
       {secondaryButtons.map((text) => {
         return (
-          <Button key={text} type="secondary">
-            {text}
-          </Button>
+          <Button key={text} type="secondary" text={text} />
         )
       })}
     </section>
