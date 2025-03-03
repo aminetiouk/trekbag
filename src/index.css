@@ -142,3 +142,70 @@ form > input {
   padding: 0 16px;
   font-size: 14px;
 }
+
+.item {
+  display: flex;
+  height: 50px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, .06);
+  position: relative;
+}
+
+.item > input {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+.item > label {
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+}
+
+label > input {
+  height: 15px;
+  width: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  outline: 2px solid transparent;
+  transition-duration: .3s;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 13px;
+  box-sizing: content-box;
+}
+
+label > input:hover {
+  border-color: #8f8474;
+}
+
+label > input:checked {
+  border-color: #6e6251;
+  background-color: #6e6251;
+}
+
+.item > button {
+  font-size: 13px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 28px;
+  top: 0;
+  color: #231d15;
+  height: 100%;
+  transition: all .1s;
+}
+
+.item > button:hover,
+.item > button:focus {
+  transform: scale(1.2);
+}
