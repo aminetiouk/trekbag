@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "./Button";
 import { useRef } from "react";
 
-export default function AddItemForm({ setItems }) {
+export default function AddItemForm({ handleNewItem }) {
   const [itemText, setItemText] = useState("")
   const inputRef = useRef();
 
@@ -21,7 +21,9 @@ export default function AddItemForm({ setItems }) {
       packed: false
     }
 
-    setItems(prev => [...prev, newItem])
+    handleNewItem(newItem);
+    setItemText("")
+    inputRef.current.focus();
   };
   return (
     <form onSubmit={handleSubmit} >
@@ -36,3 +38,5 @@ export default function AddItemForm({ setItems }) {
     </form>
   )
 }
+
+
