@@ -9,17 +9,11 @@ import { initialItems } from "../lib/constants"
 function App() {
   const [items, setItems] = useState(initialItems)
 
-  const handleAddItem = (newItemText) => {
-    const newItem = {
-      id: new Date().getTime(),
-      name: newItemText,
-      packed: false,
-    }
-
+  const handleAddItem = (newItem) => {
     const newItems = [...items, newItem];
     setItems(newItems);
-
   }
+
   return (
     <>
       <BackgroundHeading />
