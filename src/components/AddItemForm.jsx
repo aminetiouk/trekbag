@@ -15,13 +15,9 @@ export default function AddItemForm({ handleAddItem }) {
       return;
     }
 
-    const newItem = {
-      id: new Date().getTime(),
-      name: itemText,
-      packed: false
-    }
+    
 
-    handleAddItem(newItem);
+    handleAddItem(itemText);
     setItemText("")
     inputRef.current.focus();
   };
