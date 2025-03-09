@@ -23,7 +23,6 @@ function App() {
   const handleRemoveAllItems = () => {
     setItems([]);
   };
-
   const handleResetToInitial = () => {
     setItems(initialItems);
   }
@@ -31,6 +30,13 @@ function App() {
   const handleMarkAllAsComplete = () => {
     const newItems = items.map( item => {
       return {...item, packed: true};
+    })
+    setItems(newItems)
+  }
+
+  const handleMarkAllAsIncomplete = () => {
+    const newItems = items.map( item => {
+      return {...item, packed: false};
     })
     setItems(newItems)
   }
@@ -47,6 +53,7 @@ function App() {
           handleRemoveAllItems={handleRemoveAllItems}
           handleResetToInitial={handleResetToInitial}
           handleMarkAllAsComplete={handleMarkAllAsComplete}
+          handleMarkAllAsIncomplete={handleMarkAllAsIncomplete}
         />
       </main>
       <Footer />
