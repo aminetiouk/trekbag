@@ -23,7 +23,7 @@ small {
 
 /* BASE */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #f1d4b3;
   color: #292218;
   overflow: hidden;
@@ -46,7 +46,7 @@ main {
   display: grid;
   grid-template-columns: 7fr 4fr;
   grid-template-rows: 59px 1fr;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, .08);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
@@ -58,7 +58,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   z-index: -1;
 }
 
@@ -66,9 +66,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: .5;
+  opacity: 0.5;
   width: min(972px, 100%);
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 .logo {
@@ -114,7 +114,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn:hover {
@@ -122,7 +122,7 @@ h2 {
 }
 
 .btn--secondary {
-  opacity: .85;
+  opacity: 0.85;
   font-size: 14px;
 }
 
@@ -136,7 +136,7 @@ h2 {
 form > input {
   height: 45px;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, .12);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   margin: 12px 0 8px 0;
   padding: 0 16px;
@@ -147,7 +147,7 @@ form > input {
   display: flex;
   height: 50px;
   font-size: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, .06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   position: relative;
 }
 
@@ -178,7 +178,7 @@ label > input {
   border: 1px solid #d3d3d3;
   border-radius: 2px;
   outline: 2px solid transparent;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   background-color: #fff;
   cursor: pointer;
   margin-right: 13px;
@@ -202,10 +202,20 @@ label > input:checked {
   top: 0;
   color: #231d15;
   height: 100%;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
 .item > button:hover,
 .item > button:focus {
   transform: scale(1.2);
+}
+
+.item-list {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: #fff;
+  overflow-y: scroll;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+  position: relative;
 }
