@@ -219,7 +219,7 @@ label > input:checked {
   grid-row: 2 / 3;
   background-color: #fff;
   overflow-y: scroll;
-  scrollbar-color: red orange;
+  scrollbar-color: rgb(242, 148, 148) rgb(246, 214, 155);
   scrollbar-width: thin;
   position: relative;
 }
@@ -235,8 +235,6 @@ label > input:checked {
 .item-list::-webkit-scrollbar-thumb {
   background-color: #f3f1ee;
 }
-
-
 
 .empty-state {
   position: absolute;
