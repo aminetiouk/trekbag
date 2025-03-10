@@ -1,6 +1,7 @@
 export default function ItemList({
   items,
   handleDeleteItem,
+  handleToggleItem
 }) {
   return (
     <ul>
@@ -10,6 +11,7 @@ export default function ItemList({
             key={item.id}
             item={item}
             handleDeleteItem={handleDeleteItem}
+            handleToggleItem={handleToggleItem}
           />
         );
       })}
@@ -17,13 +19,14 @@ export default function ItemList({
   );
 }
 
-function Item({ item, handleDeleteItem }) {
+function Item({ item, handleDeleteItem, handleToggleItem }) {
   return (
     <li className="item">
       <label>
         <input
           type="checkbox"
           checked={item.packed}
+          onChange={() => handleToggleItem(item.id)}
         />
         {item.name}
       </label>
