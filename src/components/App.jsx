@@ -38,6 +38,7 @@ function App() {
   const handleRemoveAllItems = () => {
     setItems([]);
   };
+
   const handleResetToInitial = () => {
     setItems(initialItems);
   };
@@ -61,7 +62,7 @@ function App() {
       <BackgroundHeading />
 
       <main>
-        <Header />
+        <Header totalNumberOfItems={items.length}/>
         <ItemList
           items={items}
           handleDeleteItem={handleDeleteItem}
