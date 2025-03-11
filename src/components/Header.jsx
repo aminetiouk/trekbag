@@ -1,12 +1,14 @@
-import Counter from "./Counter";
-import Logo from "./Logo";
+import Counter from './Counter';
+import Logo from './Logo';
 
-
-export default function Header({ totalNumberOfItems }) {
+export default function Header({ totalNumberOfItems, NumberOfItemsPacked }) {
   return (
     <header>
       <Logo />
-      <Counter totalNumberOfItems={totalNumberOfItems}/>
+      <Counter
+        totalNumberOfItems={totalNumberOfItems}
+        NumberOfItemsPacked={NumberOfItemsPacked}
+      />
     </header>
   );
 }
