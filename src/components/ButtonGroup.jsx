@@ -1,9 +1,9 @@
 import Button from './Button';
-import { useItemsContext } from '../lib/hooks';
 import { secondaryButtons } from '../lib/constants';
+import { useItemsStore } from '../stores/itemsStore';
 
 export default function ButtonGroup() {
-  const handlers = useItemsContext();
+  const handlers = useItemsStore();
 
   return (
     <section className="button-group">
