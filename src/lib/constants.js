@@ -34,18 +34,18 @@ export const sortingOption = [
 export const secondaryButtons = (handlers) => [
   {
     text: 'Mark all as complete',
-    onClick: handlers.handleMarkAllAsComplete
+    onClick: handlers.markAllAsComplete
   },
   {
     text: 'Mark all as incomplete',
-    onClick: handlers.handleMarkAllAsIncomplete
+    onClick: handlers.markAllAsIncomplete
   },
   {
     text: 'Reset to initial',
-    onClick: handlers.handleResetToInitial
+    onClick: handlers.resetToInitial
   },
   {
     text: 'Remove all items',
-    onClick: handlers.handleRemoveAllItems
+    onClick: handlers.removeAllItems
   }
 ];
