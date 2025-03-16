@@ -54,7 +54,7 @@ h1 {
   font-size: 128px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.05);
-  top: 13%;
+  top: 16%;
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
@@ -248,4 +248,34 @@ label > input:checked {
   padding: 15px 28px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 13px;
+}
+
+@media (max-height: 950px) {
+  h1 {
+    top: 5%;
+  }
+}
+
+@media (max-height: 916px) {
+  h1 {
+    top: 3.5%;
+  }
+}
+
+@media (max-height: 883px) {
+  h1 {
+    top: 2.5%;
+  }
+}
+
+@media (max-height: 850px) {
+  h1 {
+    top: 0%;
+  }
+}
+
+@media (max-height: 800px) {
+  h1 {
+    top: -3%;
+  }
 }
